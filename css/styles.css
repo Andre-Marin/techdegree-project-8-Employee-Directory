@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ECECEC;
+}
+
+h2 {
+  margin-top: 3rem;
+  margin-left: 5rem;
+}
+
+#people {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-between;
+  margin: 0 3rem;
+}
+
+.employeeCard {
+  background-color: #F4F4F4;
+  display: flex;
+  border: 1px solid #BABABA;
+  border-radius: 5px;
+  width: 30%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.employeeCard img {
+  border-radius: 50%;
+  margin-left: 1rem;
+  width: 30%;
+}
+
+.employeeCard .basicInfo {
+  margin-left: 2rem;
+}
+
+.employeeCard h3 {
+  font-size: 24px;
+}
+
+.employeeCard p {
+  color: darkgrey;
+  margin-top: -10px;
+}
+
+#overlay {
+  cursor: default;
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  justify-content: center;
+
+}
+
+#overlay .employeeCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 30%;
+  height: 65%;
+  margin: 6rem auto;
+}
+
+#overlay img {
+  align-self: center;
+  width: 40%;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+
+#overlay .basicInfo {
+  margin: auto;
+  text-align: center;
+  padding: 0 70px;
+  border-bottom: 2px solid lightgrey;
+}
+
+#overlay .moreInfo {
+  margin: 2rem auto 1rem;
+  text-align: center;
+}
+#overlay h3 {
+  font-size: 30px;
+}
+#overlay .moreInfo p {
+  padding: 4px;
+  font-size: 20px;
+}
+
+#overlay .basicInfo p {
+  font-size: 20px;
+  padding: 4px;
+}
+
+.exitBtn {
+  background-color: black;
+  color: white;
+  display: none;
+  width: 2rem;
+  font-size: 20px;
+  position: absolute;
+  right: 616px;
+  cursor: pointer;
+
+}
+/* #overlay .employeeCard:after {
+  display: inline-block;
+  content: "\00d7";
+  font-size: 40px;
+  background-color: lightgrey;
+  color: white;
+} */
